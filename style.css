@@ -1,0 +1,118 @@
+body {
+    background-color: #92bde7;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 3rem auto;
+    text-align: center;
+    background-color: #215d96a9;
+    padding: 1rem 1rem 3rem;
+    width: 80%;
+    min-width: 17rem;
+    max-width: 22rem;
+    box-shadow: 0 0 1rem black;
+}
+
+#container h1 {
+    font-family: 'Comic sans MS';
+    color: #ccc;
+}
+
+#timer {
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 13rem;
+    height: 13rem;
+    background-color: #1f507e;
+    border-radius: 50%;
+    border: white solid 0.2rem;
+}
+
+#timer p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    transform: translateY(100%);
+}
+
+#timer span {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0 0.2rem;
+    margin: 0.2rem;
+}
+
+p#timer-note {
+    color: #fff;
+    font-family: 'comic sans ms';
+    margin: 2rem 0;
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 6rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: #aed;
+    border: none;
+    cursor: pointer;
+}
+
+.button-1 {
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: #052693
+}
+
+.button-2 {
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: #df0c17
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+#control {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    transform: translate(12%, 15%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+#play-pause {
+    position: absolute;
+    left: 18%;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 1.8s border ease-out -1s;
+}
+
+.pause {
+    height: 9rem;
+    width: 2rem;
+    border-left: 2.5rem solid white;
+    border-right: 2.5rem solid white;
+    transform: translateY(7%);
+}
+
+.play {
+    border-top: 5rem solid transparent;
+    border-bottom: 5rem solid transparent;
+    border-left: 6rem solid white;
+    transform: translateX(25%);
+}
